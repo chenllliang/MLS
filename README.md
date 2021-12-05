@@ -1,7 +1,9 @@
 # Masked Label Smoothing for Machine Translation
 
-```bash
 
+## Preparations
+
+```bash
 conda create -n MLS python=3.7
 conda activate MLS
 
@@ -13,6 +15,8 @@ pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f ht
 # We place the MLS criterion inside fairseq repo's criterion folder .
 # Make sure you have the same version of pytorch and CUDA, we use torch 1.9.0+cu111
 ```
+
+We adopt mosesdecoder for tokenization , subword-nmt for BPE and fairseq for training pipelines.
 
 
 ## Preprocess
