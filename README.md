@@ -1,6 +1,24 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
 Hi, this is the official source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022 Main Conference. Feel free to contact.
 
+## Brief Introduction
+
+
+Label smoothing and vocabulary sharing are two widely used techniques in neural machine translation models. However, we argue that simply applying both techniques can be conflicting and even leads to sub-optimal performance. When allocating smoothed probability, original label smoothing treats the **source-side words** that would never appear in the target language equally to the real **target-side words**, which could bias the translation model. To address this issue, we propose **Masked Label Smoothing (MLS)**, a new mechanism that masks the soft label probability of source-side words to zero. Simple yet effective, MLS manages to better integrate label smoothing with vocabulary sharing. 
+
+
+<br>
+
+<img src="./venn.png" width = "400"  alt="words" align=center />
+
+Venn graph showing the words allocation between lanugages.
+
+
+
+<img src="./bars.png" width = "400"  alt="venn graph" align=center />
+
+Illustration of Weighted Label Smoothing and Masked Label Smoothing
+
 
 
 
