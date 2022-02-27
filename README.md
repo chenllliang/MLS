@@ -95,7 +95,7 @@ bash generate.sh ../databin/iwslt16-ro-en-joined ../checkpoints/ro-en-ori-0.1 ..
 
 bash generate.sh ../databin/iwslt16-ro-en-joined ../checkpoints/ro-en-MLS-0.1 ../Output/ro-en-MLS-ls.out # should get BLEU4 = 22.89
 ```
-
+We have uploaded the generated texts in the Output folder, which you can also refer to.
 
 ## Using Weighted Label Smoothing
 
