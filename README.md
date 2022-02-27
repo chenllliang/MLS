@@ -9,13 +9,16 @@ Label smoothing and vocabulary sharing are two widely used techniques in neural 
 
 <br>
 
-<img src="./venn.png" width = "600"  alt="words" align=center />
+<div align=center>
+<img width="600" src="./venn.png"/>
+</div>
 
 Venn graph showing the token distribution between lanugages.
 
 
-
-<img src="./bars.png" width = "600"  alt="bar graph" align=center />
+<div align=center>
+<img width="600" src="./bars.png"/>
+</div>
 
 Illustration of Masked Label Smoothing (down right) and Weighted Label Smoothing (up right & down left) 
 
