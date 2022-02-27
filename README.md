@@ -76,7 +76,7 @@ if works succeefully, two folder containing binary training files will be saved 
 
 
 
-## Train MLS and the original LS 
+## Train with MLS and original LS 
 
 
 ```bash
