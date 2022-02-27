@@ -1,9 +1,15 @@
-# Masked Label Smoothing for Machine Translation
+# Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
+Hi, this is the official source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022 Main Conference. Feel free to contact.
+
+
 
 
 ## Preparations
 
 ```bash
+git clone git@github.com:chenllliang/MLS.git
+cd MLS
+
 conda create -n MLS python=3.7
 conda activate MLS
 
@@ -13,7 +19,7 @@ pip install sacremoses
 
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 # We place the MLS criterion inside fairseq repo's criterion folder .
-# Make sure you have the same version of pytorch and CUDA, we use torch 1.9.0+cu111
+# Make sure you have the right version of pytorch and CUDA, we use torch 1.9.0+cu111
 ```
 
 We adopt mosesdecoder for tokenization , subword-nmt for BPE and fairseq for training pipelines.
@@ -21,7 +27,7 @@ We adopt mosesdecoder for tokenization , subword-nmt for BPE and fairseq for tra
 
 ## Preprocess
 
-We have prepared a pre-processed version of data of IWSLT16 RO-EN on Google and 百度网盘 (download it and unzip in ../databin/ folder, you can jump to next section then~) .
+We have prepared a pre-processed version of data of IWSLT16 RO-EN on Google and BaiduDisk (download it and unzip in ../databin/ folder, you can jump to next section then~) .
 
 Or you can download them directly or follow our code to preprocess your own data.
 
