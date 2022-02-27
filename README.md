@@ -70,9 +70,8 @@ if works succeefully, two folder containing binary training files will be saved 
 
 
 
-## Train MLS compared to original LS in RO-EN 
+## Train MLS and the original LS 
 
-If you use your own processed data, you may need to change the path in the training scripts.
 
 ```bash
 cd scripts
