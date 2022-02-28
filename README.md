@@ -71,7 +71,7 @@ cd script
 bash preprocess.sh ../data/iwslt16-ro-en/ ro en
 ```
 
-if works succeefully, two folder containing binary training files will be saved in databin folder without errors.
+if works succeefully, two folders containing binary training files will be saved in databin folder.
 
 
 
