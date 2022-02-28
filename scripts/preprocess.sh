@@ -4,33 +4,33 @@ dir=$1
 
 
 
-# echo "start tokenization"
+echo "start tokenization"
 
-# perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-# -threads 20 -l $lan < $dir"dev."$lan > $dir"dev.tok."$lan 
+perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
+-threads 20 -l $lan < $dir"dev."$lan > $dir"dev.tok."$lan 
 
-# perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-# -threads 20 -l $lan < $dir"train."$lan > $dir"train.tok."$lan
+perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
+-threads 20 -l $lan < $dir"train."$lan > $dir"train.tok."$lan
 
-# perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-# -threads 20 -l $lan < $dir"test."$lan > $dir"test.tok."$lan
+perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
+-threads 20 -l $lan < $dir"test."$lan > $dir"test.tok."$lan
 
-# perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-# -threads 20 -l $lan2 < $dir"dev."$lan2 > $dir"dev.tok."$lan2
+perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
+-threads 20 -l $lan2 < $dir"dev."$lan2 > $dir"dev.tok."$lan2
 
-# perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-# -threads 20 -l $lan2 < $dir"train."$lan2 > $dir"train.tok."$lan2
+perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
+-threads 20 -l $lan2 < $dir"train."$lan2 > $dir"train.tok."$lan2
 
-# perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-# -threads 20 -l $lan2 < $dir"test."$lan2 > $dir"test.tok."$lan2
+perl ../Tools/mosesdecoder/scripts/tokenizer/tokenizer.perl \
+-threads 20 -l $lan2 < $dir"test."$lan2 > $dir"test.tok."$lan2
 
-# echo "bpe language "$lan
-# python ../Tools/subword-nmt/learn_joint_bpe_and_vocab.py \
-# -s 16000 -i $dir"train.tok."$lan -o $dir"bpe."$lan --write-vocabulary $dir"voc."$lan
+echo "bpe language "$lan
+python ../Tools/subword-nmt/learn_joint_bpe_and_vocab.py \
+-s 16000 -i $dir"train.tok."$lan -o $dir"bpe."$lan --write-vocabulary $dir"voc."$lan
 
-# echo "bpe language "$lan2
-# python ../Tools/subword-nmt/learn_joint_bpe_and_vocab.py \
-# -s 16000 -i $dir"train.tok."$lan2 -o $dir"bpe."$lan2 --write-vocabulary $dir"voc."$lan2
+echo "bpe language "$lan2
+python ../Tools/subword-nmt/learn_joint_bpe_and_vocab.py \
+-s 16000 -i $dir"train.tok."$lan2 -o $dir"bpe."$lan2 --write-vocabulary $dir"voc."$lan2
 
 echo "applying bpe"
 

@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 fairseq-train ../databin/iwslt16-ro-en-joined \
 --save-dir ../checkpoints/ro-en-MLS-0.1 \
 --arch transformer_wmt_en_de \
@@ -20,4 +20,4 @@ fairseq-train ../databin/iwslt16-ro-en-joined \
 --fp16 \
 --seed 666 \
 --joint-vocab-dir ../databin/iwslt16-ro-en-joined/dict.en.txt \
---tgt-vocab-dir ../databin/iwslt16-ro-en-isolated/dict.en.txt
+--tgt-vocab-dir ../databin/iwslt16-ro-en-isolated/dict.en.txt       

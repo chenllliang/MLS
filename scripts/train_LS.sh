@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=6,7
+export CUDA_VISIBLE_DEVICES=0
 fairseq-train ../databin/iwslt16-ro-en-joined \
 --save-dir ../checkpoints/ro-en-ori-ls-0.1 \
 --arch transformer_wmt_en_de \
@@ -13,10 +13,10 @@ fairseq-train ../databin/iwslt16-ro-en-joined \
 --criterion label_smoothed_cross_entropy \
 --label-smoothing 0.1 --dropout 0.3 --weight-decay 0.0001 \
 --max-tokens  2048  \
---update-freq 4 \
+--update-freq 8 \
 --no-progress-bar --log-format json --log-interval 500 \
 --max-epoch 50 \
 --keep-last-epochs 2 \
 --fp16 \
---seed 666  # 666 is a lucky number in China
+--seed 666  # 666 is a lucky number in Chinese culture
 
