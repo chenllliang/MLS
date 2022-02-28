@@ -1,5 +1,5 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
-Hi, this is the official source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022 Main Conference. Feel free to contact.
+Hi, this is the official source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. The paper is uploaded to this url.
 
 ## Introduction
 
