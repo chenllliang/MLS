@@ -50,25 +50,25 @@ We adopt mosesdecoder for tokenization , subword-nmt for BPE and fairseq for tra
 
 ## Preprocess
 
-We have prepared a pre-processed binary data of IWSLT16 RO-EN on Google and BaiduDisk (download it and unzip in ../databin/ folder, you can jump to next section then) .
+We have prepared a pre-processed binary data of IWSLT16 RO-EN on Google and BaiduDisk (coming soon, download it and unzip in ../databin/ folder, you can jump to next section then) .
 
 
-If you plan to use your own dataset. Before running code, you should have your raw translation data looks like belows, each line contains one raw sentence.
+If you plan to try your own dataset. Before running code, you should have your raw translation data looks like belows, each line contains one raw sentence.
 ```bash
-../data/iwslt16-ro-en/
--- train.ro
--- train.en
--- dev.ro
--- dev.en
--- test.ro
--- test.en
+../data/dataset-src-tgt/  # src,tgt are your own languages
+-- train.src
+-- train.tgt
+-- dev.src
+-- dev.tgt
+-- test.src
+-- test.tgt
 ```
 
 Then,
 
 ```bash
 cd script
-bash preprocess.sh ../data/iwslt16-ro-en/ ro en
+bash preprocess.sh ../data/dataset-src-tgt/ src tgt
 ```
 
 if works succeefully, two folders containing binary files will be saved in databin folder.
