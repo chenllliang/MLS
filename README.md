@@ -45,7 +45,7 @@ pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f ht
 # Make sure you have the right version of pytorch and CUDA, we use torch 1.9.0+cu111
 ```
 
-We adopt mosesdecoder for tokenization , subword-nmt for BPE and fairseq for training pipelines.
+We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenization , [subword-nmt](https://github.com/rsennrich/subword-nmt) for BPE and [fairseq](https://github.com/pytorch/fairseq) for experiment pipelines.
 
 
 ## Preprocess
@@ -53,14 +53,14 @@ We adopt mosesdecoder for tokenization , subword-nmt for BPE and fairseq for tra
 We have prepared a pre-processed binary data of IWSLT16 RO-EN on Google and BaiduDisk (coming soon, download it and unzip in ../databin/ folder, you can jump to next section then) .
 
 
-If you plan to try your own dataset. You may refer to this script[https://github.com/chenllliang/MLS/blob/main/scripts/preprocess.sh] for preprocessing and parameter setting.
+If you plan to try your own dataset. You may refer to this [script](https://github.com/chenllliang/MLS/blob/main/scripts/preprocess.sh) for preprocessing and parameter setting.
 
 ```bash
 cd script
 bash preprocess.sh ../data/dataset-src-tgt/ src tgt
 ```
 
-if works succeefully, two folders containing binary files will be saved in databin folder.
+if it works succeefully, two folders containing binary files will be saved in the databin folder.
 
 
 
