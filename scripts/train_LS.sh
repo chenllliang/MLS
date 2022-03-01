@@ -1,5 +1,5 @@
 export CUDA_VISIBLE_DEVICES=0
-fairseq-train ../databin/iwslt16-ro-en-joined \
+fairseq-train ../databin/wmt16-ro-en-joined \
 --save-dir ../checkpoints/ro-en-ori-ls-0.1 \
 --arch transformer_wmt_en_de \
 --optimizer adam --adam-betas '(0.9, 0.98)' \
