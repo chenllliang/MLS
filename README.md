@@ -1,5 +1,5 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
-Hi, this is the source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. The paper is uploaded to this url soon.
+Hi, this is the source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. You can find the paper in the root directory.
 
 ## Introduction
 
@@ -69,9 +69,9 @@ if it works succeefully, two folders containing binary files will be saved in th
 
 ```bash
 cd scripts
-bash train_LS.sh # should end up in 50 epoches with valid_best_bleu = 22.38
+bash train_LS.sh # end up in 50 epoches with valid_best_bleu = 22.38
 
-bash train_MLS.sh # should end up in 50 epoches with valid_best_bleu = 22.72
+bash train_MLS.sh # end up in 50 epoches with valid_best_bleu = 22.72
 ```
 
 The best valid checkpoint will be saved in checkpoints folder for testing.
