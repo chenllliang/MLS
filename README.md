@@ -50,7 +50,7 @@ We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenizat
 
 ## Preprocess
 
-We have prepared a pre-processed binary data of IWSLT16 RO-EN on Google and BaiduDisk (coming soon, download it and unzip in ../databin/ folder, you can jump to next section then) .
+We have prepared a pre-processed binary data of WMT16 RO-EN on Google and BaiduDisk (coming soon, download it and unzip in ../databin/ folder, you can jump to next section then) .
 
 
 If you plan to try your own dataset. You may refer to this [script](https://github.com/chenllliang/MLS/blob/main/scripts/preprocess.sh) for preprocessing and parameter setting.
@@ -82,10 +82,10 @@ The best valid checkpoint will be saved in checkpoints folder for testing.
 ```bash
 cd scripts
 
-bash generate.sh ../databin/iwslt16-ro-en-joined ../checkpoints/ro-en-ori-0.1 ../Output/ro-en-ori-ls.out # should get BLEU4 = 22.54
+bash generate.sh ../databin/wmt16-ro-en-joined ../checkpoints/ro-en-ori-0.1 ../Output/ro-en-ori-ls.out # should get BLEU4 = 22.54
 
 
-bash generate.sh ../databin/iwslt16-ro-en-joined ../checkpoints/ro-en-MLS-0.1 ../Output/ro-en-MLS-ls.out # should get BLEU4 = 22.89
+bash generate.sh ../databin/wmt16-ro-en-joined ../checkpoints/ro-en-MLS-0.1 ../Output/ro-en-MLS-ls.out # should get BLEU4 = 22.89
 ```
 We have uploaded the generated texts in the Output folder, which you can also refer to.
 
