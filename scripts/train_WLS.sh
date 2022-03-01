@@ -1,5 +1,5 @@
-export CUDA_VISIBLE_DEVICES=7
-fairseq-train ../databin/iwslt16-ro-en-joined \
+export CUDA_VISIBLE_DEVICES=0
+fairseq-train ../databin/wmt16-ro-en-joined \
 --save-dir ../checkpoints/ro-en-wls-442 \
 --arch transformer_wmt_en_de \
 --optimizer adam --adam-betas '(0.9, 0.98)' \
@@ -17,9 +17,9 @@ fairseq-train ../databin/iwslt16-ro-en-joined \
 --keep-last-epochs 2 \
 --fp16 \
 --seed 666 \
---joint-vocab-dir ../databin/iwslt16-ro-en-joined/dict.en.txt \
---tgt-vocab-dir ../databin/iwslt16-ro-en-isolated/dict.en.txt \
---src-vocab-dir ../databin/iwslt16-ro-en-isolated/dict.ro.txt \
+--joint-vocab-dir ../databin/wmt16-ro-en-joined/dict.en.txt \
+--tgt-vocab-dir ../databin/wmt16-ro-en-isolated/dict.en.txt \
+--src-vocab-dir ../databin/wmt16-ro-en-isolated/dict.ro.txt \
 --criterion weighted_label_smoothed_cross_entropy \
 --lp-beta 0.4 --lp-gamma 0.4 --lp-eps 0.2 \
 --label-smoothing 0.1 --dropout 0.3 --weight-decay 0.0001 \
