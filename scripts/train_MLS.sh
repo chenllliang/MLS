@@ -1,5 +1,5 @@
 export CUDA_VISIBLE_DEVICES=0
-fairseq-train ../databin/iwslt16-ro-en-joined \
+fairseq-train ../databin/wmt16-ro-en-joined \
 --save-dir ../checkpoints/ro-en-MLS-0.1 \
 --arch transformer_wmt_en_de \
 --optimizer adam --adam-betas '(0.9, 0.98)' \
@@ -19,5 +19,5 @@ fairseq-train ../databin/iwslt16-ro-en-joined \
 --keep-last-epochs 2 \
 --fp16 \
 --seed 666 \
---joint-vocab-dir ../databin/iwslt16-ro-en-joined/dict.en.txt \
---tgt-vocab-dir ../databin/iwslt16-ro-en-isolated/dict.en.txt       
+--joint-vocab-dir ../databin/wmt16-ro-en-joined/dict.en.txt \
+--tgt-vocab-dir ../databin/wmt16-ro-en-isolated/dict.en.txt       
