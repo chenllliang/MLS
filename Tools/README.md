@@ -1,0 +1,1 @@
+info: you need to clone [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenization , [subword-nmt](https://github.com/rsennrich/subword-nmt) for BPE here.
