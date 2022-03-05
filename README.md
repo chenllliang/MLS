@@ -1,4 +1,9 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
+News 🚩
+- Release preprocessed data and model output. 2022.03.05
+- Code released at Github. 2022.03.04
+- Accepted by ACL 2022 Main Conference. 2022.02.24
+
 Hi, this is the source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. You can find the paper in the root directory (uploading to arxiv soon).
 
 ## Introduction
