@@ -60,14 +60,14 @@ python ../Tools/subword-nmt/apply_bpe.py \
 
 fairseq-preprocess --source-lang $lan2 --target-lang $lan \
     --trainpref $dir"train.tok.bpe" --validpref $dir"dev.tok.bpe" --testpref $dir"test.tok.bpe" \
-    --destdir ../databin/iwslt16-ro-en-isolated-new \
+    --destdir ../databin/iwslt14-de-en-isolated-new \
     --thresholdsrc 10 --thresholdtgt 10 \
     --workers 20 \
 
 
 fairseq-preprocess --source-lang $lan2 --target-lang $lan \
     --trainpref $dir"train.tok.bpe" --validpref $dir"dev.tok.bpe" --testpref $dir"test.tok.bpe" \
-    --destdir ../databin/iwslt16-ro-en-joined-new \
+    --destdir ../databin/iwslt14-de-en-joined-new \
     --thresholdsrc 10 --thresholdtgt 10 \
     --workers 20 \
     --joined-dictionary \
