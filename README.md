@@ -45,7 +45,9 @@ pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f ht
 # Make sure you have the right version of pytorch and CUDA, we use torch 1.9.0+cu111
 ```
 
-We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenization , [subword-nmt](https://github.com/rsennrich/subword-nmt) for BPE and [fairseq](https://github.com/pytorch/fairseq) for experiment pipelines.
+We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenization , [subword-nmt](https://github.com/rsennrich/subword-nmt) for BPE and [fairseq](https://github.com/pytorch/fairseq) for experiment pipelines. **You need to clone the first two repos into `./Tools` before next step.**
+
+
 
 
 ## Preprocess
