@@ -62,6 +62,19 @@ We have prepared a pre-processed binary data of IWSLT14 DE-EN in the ../databin 
 
 If you plan to try your own dataset. You may refer to this [script](https://github.com/chenllliang/MLS/blob/main/scripts/preprocess.sh) for preprocessing and parameter setting.
 
+Before running code, you should have your original translation data's structure looks like belows, each line contains one sentence.
+
+```bash
+../data/dataset-src-tgt/
+-- train.src
+-- train.tgt
+-- dev.src
+-- dev.tgt
+-- test.src
+-- test.tgt
+```
+Then,
+
 ```bash
 cd script
 bash preprocess.sh ../data/dataset-src-tgt/ src tgt
