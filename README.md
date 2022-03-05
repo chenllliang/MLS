@@ -50,7 +50,7 @@ We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenizat
 
 ## Preprocess
 
-We have prepared a pre-processed binary data of IWSLT14 DE-EN in the databin folder (unzip in ../databin/ folder, you can jump to next section then) .
+We have prepared a pre-processed binary data of IWSLT14 DE-EN in the ../databin folder (unzip it and put the two unzipped folders under ../databin/, you can jump to next section then) .
 
 
 If you plan to try your own dataset. You may refer to this [script](https://github.com/chenllliang/MLS/blob/main/scripts/preprocess.sh) for preprocessing and parameter setting.
