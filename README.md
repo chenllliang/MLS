@@ -50,7 +50,7 @@ We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenizat
 
 ## Preprocess
 
-We have prepared a pre-processed binary data of WMT16 RO-EN on Google and BaiduDisk (coming soon, download it and unzip in ../databin/ folder, you can jump to next section then) .
+We have prepared a pre-processed binary data of IWSLT14 DE-EN in the databin folder (unzip in ../databin/ folder, you can jump to next section then) .
 
 
 If you plan to try your own dataset. You may refer to this [script](https://github.com/chenllliang/MLS/blob/main/scripts/preprocess.sh) for preprocessing and parameter setting.
@@ -69,9 +69,9 @@ if it works succeefully, two folders containing binary files will be saved in th
 
 ```bash
 cd scripts
-bash train_LS.sh # end up in 50 epoches with valid_best_bleu = 22.38
+bash train_LS.sh # end up in 20 epoches with valid_best_bleu = 36.91
 
-bash train_MLS.sh # end up in 50 epoches with valid_best_bleu = 22.72
+bash train_MLS.sh # end up in 20 epoches with valid_best_bleu = 37.16
 ```
 
 The best valid checkpoint will be saved in checkpoints folder for testing.
@@ -82,12 +82,21 @@ The best valid checkpoint will be saved in checkpoints folder for testing.
 ```bash
 cd scripts
 
-bash generate.sh ../databin/wmt16-ro-en-joined ../checkpoints/ro-en-ori-0.1 ../Output/ro-en-ori-ls.out # should get BLEU4 = 22.54
+bash generate.sh ../databin/iwslt14-de-en-joined-new ../checkpoints/de-en-LS-0.1 ../Output/de-en-ls-0.1.out # get BLEU4 = 35.20
 
 
-bash generate.sh ../databin/wmt16-ro-en-joined ../checkpoints/ro-en-MLS-0.1 ../Output/ro-en-MLS-ls.out # should get BLEU4 = 22.89
+bash generate.sh ../databin/iwslt14-de-en-joined-new ../checkpoints/de-en-MLS-0.1 ../Output/de-en-mls-0.1.out # get BLEU4 = 35.76
 ```
 We have uploaded the generated texts in the Output folder, which you can also refer to.
+
+## Some Results on single GPU
+
+| BLEU  |  IWSLT14 DE-EN  | WMT16 RO-EN  |
+|  ----  | ----  |----  |
+| LS  | dev: 36.91 test: 35.20 |dev: 22.38 test: 22.54 |
+| MLS(Ours)  | dev: **37.16** test: **35.76** |dev: **22.72** test: **22.89**  |
+
+
 
 ## Using Weighted Label Smoothing
 
