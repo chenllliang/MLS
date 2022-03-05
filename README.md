@@ -46,7 +46,7 @@ cd fairseq # We place the MLS criterions inside fairseq's criterion sub-folder, 
 pip install --editable ./
 pip install sacremoses
 
-pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
 # Make sure you have the right version of pytorch and CUDA, we use torch 1.9.0+cu111
 ```
 
