@@ -96,7 +96,7 @@ bash generate.sh ../databin/iwslt14-de-en-joined-new ../checkpoints/de-en-MLS-0.
 ```
 We have uploaded the generated texts in the Output folder, which you can also refer to.
 
-## Some Results on single GPU
+## Some results on single GPU
 
 | BLEU  |  IWSLT14 DE-EN  | WMT16 RO-EN  |
 |  ----  | ----  |----  |
