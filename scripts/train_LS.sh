@@ -1,6 +1,6 @@
 export CUDA_VISIBLE_DEVICES=0
 fairseq-train ../databin/iwslt14-de-en-joined-new \
---save-dir ../checkpoints/iwslt14-de-en-ls-0.1 \
+--save-dir ../checkpoints/de-en-LS-0.1 \
 --arch transformer_wmt_en_de \
 --optimizer adam --adam-betas '(0.9, 0.98)' \
 --lr-scheduler inverse_sqrt --warmup-init-lr 1e-07 --warmup-updates 1000 \
