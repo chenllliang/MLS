@@ -1,6 +1,4 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
-For latest update/issues, please move to this [repo](https://github.com/chenllliang/MLS).
-
 **News** 🚩
 - Release preprocessed data and model output. 2022.03.05
 - Code released at Github. 2022.03.04
@@ -9,7 +7,7 @@ For latest update/issues, please move to this [repo](https://github.com/chenllli
 **Work in Progress** 🚩
 - Exploring MLS in O2M & M2M Multilingual Translation (Releasing Soon)
 
-Hi, this is the source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. You can find the paper in https://arxiv.org/abs/2203.02889.
+Hi, this is the official source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. You can find the paper in https://arxiv.org/abs/2203.02889.
 
 
 
