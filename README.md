@@ -70,7 +70,7 @@ If you plan to try your own dataset. You may refer to this [script](https://gith
 Before running code, you should have your original translation data's structure looks like belows, each line contains one sentence.
 
 ```bash
-./data/dataset-src-tgt/
+./data/dataset-src-tgt/ # here src,tgt are the language id, you need to change them to your own languages, like en,zh,ro,de ...
 -- train.src
 -- train.tgt
 -- dev.src
