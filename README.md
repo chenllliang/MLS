@@ -1,4 +1,6 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
+For latest update/issues, please move to this [repo](https://github.com/chenllliang/MLS).
+
 **News** 🚩
 - Release preprocessed data and model output. 2022.03.05
 - Code released at Github. 2022.03.04
@@ -8,6 +10,8 @@
 - Exploring MLS in O2M & M2M Multilingual Translation (Releasing Soon)
 
 Hi, this is the source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. You can find the paper in https://arxiv.org/abs/2203.02889.
+
+
 
 ## Introduction
 
@@ -50,6 +54,7 @@ pip install --editable ./
 pip install sacremoses
 
 # Make sure you have the right version of pytorch and CUDA, we use torch 1.10+cu113
+
 ```
 
 We adopt [mosesdecoder](https://github.com/moses-smt/mosesdecoder) for tokenization , [subword-nmt](https://github.com/rsennrich/subword-nmt) for BPE and [fairseq](https://github.com/pytorch/fairseq) for experiment pipelines. **You need to clone the first two repos into `./Tools` before next step.**
