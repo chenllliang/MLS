@@ -30,9 +30,6 @@ Label smoothing and vocabulary sharing are two widely used techniques in neural 
 
 <div align=center>
 <img width="600" src="./bars.png"/>
-  
-  Illustration of Masked Label Smoothing (bottom right) and Weighted Label Smoothing (upper right & bottom left)
-
 </div>
 
 
