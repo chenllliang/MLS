@@ -4,6 +4,9 @@ News 🚩
 - Code released at Github. 2022.03.04
 - Accepted by ACL 2022 Main Conference. 2022.02.24
 
+In Progress 👼
+- Exploring MLS in O2M & M2M Multilingual Translation
+
 Hi, this is the source code of our paper "Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation" accepted by ACL 2022. You can find the paper in https://arxiv.org/abs/2203.02889.
 
 ## Introduction
