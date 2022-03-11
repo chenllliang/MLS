@@ -1,5 +1,6 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
 **News** 🚩
+- Release Result of MLS in New O2M translation tasks. 2022.03.11
 - Release preprocessed data and model output. 2022.03.05
 - Code released at Github. 2022.03.04
 - Accepted by ACL 2022 Main Conference. 2022.02.24
@@ -113,12 +114,22 @@ bash generate.sh ../databin/iwslt14-de-en-joined-new ../checkpoints/de-en-MLS-0.
 ```
 We have uploaded the generated texts in the Output folder, which you can also refer to.
 
-## Some results on single GPU
+## Some Results 
+
+### Bilingual
 
 | BLEU  |  IWSLT14 DE-EN  | WMT16 RO-EN  |
 |  ----  | ----  |----  |
 | LS  | dev: 36.91 test: 35.20 |dev: 22.38 test: 22.54 |
 | MLS(Ours)  | dev: **37.16** test: **35.76** |dev: **22.72** test: **22.89**  |
+
+### Multilingual (O2M)
+
+| BLEU  |  EN-FR  | EN-DE  | EN-GU | EN-HI |
+|  ----  | ----  | ----  | ----  | ----  |
+| No LS | **28.39** | **31.44**| 7.48 | 12.74 |
+| LS | 27.93 | 30.9 | 8.01 | 13.22 |
+| MLS(Ours)  | 28.16 | 30.77 | **8.23** | **13.70** |
 
 
 
