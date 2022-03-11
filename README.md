@@ -1,6 +1,6 @@
 # Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation
 **News** 🚩
-- Release Result of MLS in New O2M translation tasks. 2022.03.11
+- Release result of MLS in New O2M translation tasks. 2022.03.11
 - Release preprocessed data and model output. 2022.03.05
 - Code released at Github. 2022.03.04
 - Accepted by ACL 2022 Main Conference. 2022.02.24
