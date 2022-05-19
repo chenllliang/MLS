@@ -150,10 +150,18 @@ The test procedure follows previous section.
 If you feel our work helpful, please kindly cite
 
 ```bib
-@inproceedings{chen2022focus,
-   title={Focus on the Target’s Vocabulary: Masked Label Smoothing for Machine Translation},
-   author={Chen, Liang and Xu, Runxin and Chang, Baobao},
-   booktitle={The 60th Annual Meeting of the Association for Computational Linguistics},
-   year={2022}
+@inproceedings{chen-etal-2022-focus,
+    title = "Focus on the Target{'}s Vocabulary: Masked Label Smoothing for Machine Translation",
+    author = "Chen, Liang  and
+      Xu, Runxin  and
+      Chang, Baobao",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-short.74",
+    pages = "665--671",
+    abstract = "Label smoothing and vocabulary sharing are two widely used techniques in neural machine translation models. However, we argue that simply applying both techniques can be conflicting and even leads to sub-optimal performance. When allocating smoothed probability, original label smoothing treats the source-side words that would never appear in the target language equally to the real target-side words, which could bias the translation model. To address this issue, we propose Masked Label Smoothing (MLS), a new mechanism that masks the soft label probability of source-side words to zero. Simple yet effective, MLS manages to better integrate label smoothing with vocabulary sharing. Our extensive experiments show that MLS consistently yields improvement over original label smoothing on different datasets, including bilingual and multilingual translation from both translation quality and model{'}s calibration. Our code is released at https://github.com/PKUnlp-icler/MLS",
 }
 ```
